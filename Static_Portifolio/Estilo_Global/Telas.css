@@ -1,0 +1,237 @@
+@charset "UTF_8";
+
+@font-face {
+    font-family: Plat;
+    src: url(../Fonts/Platypi-VariableFont_wght.ttf)
+}
+@font-face {
+    font-family: Edu;
+    src: url(../Fonts/Edu_SA_Beginner/EduSABeginner-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Sri;
+    src: url(../Fonts/Sriracha/Sriracha-Regular.ttf);
+}
+*{
+    font-size: 20px;
+    
+}
+body{
+    background-color: lightyellow;
+    font-family: Sri;
+}
+h4{
+    font-size: 25px;
+}
+#menus{
+    display: flex;
+    position: relative;
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    height: 70%;
+    box-shadow: 3px 2px 3px  rgb(0, 0, 0);
+}
+th, td{
+    border: 1px solid black;
+    padding: 10px; 
+}
+th{
+    background-color: lightblue;
+}
+#location{
+    line-height: 2em;
+}
+#finalhead{
+    background-color: rgb(218, 225, 231);
+}
+footer{
+    padding: 10px;
+}
+h4{
+    font-family: Plat;
+}
+.links > span > a{
+    color: red;
+}
+.links > span > a:hover{
+    color: black;
+}
+#menus{
+    display: none;
+}
+@media screen and (min-width: 240px) and (max-width: 799px) {
+    .cab{
+        text-align: center;
+    }
+    #menus{
+        float: right;
+    }
+    #menus1, #head1{
+            display: none;
+    }
+    #foto_capa > img{
+        max-width: 80%;
+        height: 100%;
+        display: flex;
+        margin: auto;
+        position: relative;
+    }
+    #jobs > picture > img{
+        width: 100%;
+        display: flex;
+        margin: auto;
+    }
+    #caixa_texto{
+        background-color: white;
+        padding: 10px;
+    }
+
+    #texto{
+        text-indent: 20px;
+        text-align: justify;
+        line-height: 1.9em;
+    }
+    .hab{
+        border: 1px solid black;
+        padding: 5px;
+    }
+    #SIG{
+        background-color: lightgrey;
+    }
+    #ht{
+        background-color: lightpink;
+    }
+    #cs{
+        background-color: lightcyan;
+    }
+    #js{
+        background-color: lightsalmon;
+    }
+    #jq{
+        background-color: lightgreen;
+    }
+    #location{
+        width: 100%;
+        border: 2px dashed red;
+    }
+}
+@media screen and (min-width: 800px) and (max-width : 1200px){
+   .cab{
+    float: left;
+    width: 260px;
+   }
+   #head{
+    text-align: center;
+    margin: auto;
+   }
+   #menus,#head{
+    display: none;
+   }
+   .centro{
+    float: right;
+    width: 53%; 
+   }
+   .sdouble{
+    display: none;
+   }
+   #foto_capa > img{
+    max-width: 100%;
+    height: 100%;
+    position: fixed;
+    }
+    #jobs > picture > img{
+        width: 100%;
+        display: flex;
+        margin: auto;
+    }
+    #texto{
+        text-indent: 20px;
+        text-align: justify;
+        line-height: 1.9em;
+    }
+    .hab{
+        border: 1px solid black;
+        padding: 5px;
+    }
+    #SIG{
+        background-color: lightgrey;
+    }
+    #ht{
+        background-color: lightpink;
+    }
+    #cs{
+        background-color: lightcyan;
+    }
+    #js{
+        background-color: lightsalmon;
+    }
+    #jq{
+        background-color: lightgreen;
+    }
+    #location{
+        width: 100%;
+        border: 2px dashed red;
+    }
+    
+}
+@media screen and (min-width: 1201px) {
+    .cab{
+        float: left;
+        width: 260px;
+       }
+       #head{
+        text-align: center;
+        margin: auto;
+       }
+       #menus,#head{
+        display: none;
+       }
+       .centro{
+        float: right;
+        width: 53%; 
+       }
+       .sdouble{
+        display: none;
+       }
+       #foto_capa > img{
+        width: 40%;
+        height: 100%;
+        position: fixed;
+        }
+        #jobs > picture > img{
+            width: 100%;
+            display: flex;
+            margin: auto;
+        }
+        #texto{
+            text-indent: 20px;
+            text-align: justify;
+            line-height: 1.9em;
+        }
+        .hab{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        #SIG{
+            background-color: lightgrey;
+        }
+        #ht{
+            background-color: lightpink;
+        }
+        #cs{
+            background-color: lightcyan;
+        }
+        #js{
+            background-color: lightsalmon;
+        }
+        #jq{
+            background-color: lightgreen;
+        }
+        #location{
+            width: 100%;
+            border: 2px dashed red;
+        }
+}
