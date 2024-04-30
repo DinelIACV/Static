@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@media print {
+    *{
+        font: 30px monospace;
+    }
+    #foto_capa > img{
+        width: 600px;
+        height: 800px;
+    }
+    #head1{
+        display: none;
+    }
+    #jobs{
+        display: none;
+    }
+    #first{
+        display: none;
+    }
+    .links{
+        display: none;
+    }
+    footer > span{
+        display: none;
+    }
+}

@@ -12,13 +12,11 @@
     font-family: Sri;
     src: url(../Fonts/Sriracha/Sriracha-Regular.ttf);
 }
-*{
-    font-size: 20px;
-    
-}
+
 body{
     background-color: lightyellow;
     font-family: Sri;
+    font-size: 25px;
 }
 h4{
     font-size: 25px;
@@ -62,7 +60,7 @@ h4{
 #menus{
     display: none;
 }
-@media screen and (min-width: 240px) and (max-width: 799px) {
+@media screen and (min-width: 240px) and (max-width: 799px) and (Orientation:portrait){
     .cab{
         text-align: center;
     }
@@ -117,9 +115,136 @@ h4{
         width: 100%;
         border: 2px dashed red;
     }
+}@media screen and (min-width: 240px) and (max-width: 799px) and (orientation: landscape){
+    body{
+        font-size: 20px;
+    }
+    .cab{
+        float: left;
+        width: 260px;
+       }
+       #head{
+        text-align: center;
+        margin: auto;
+       }
+       #menus,#head{
+        display: none;
+       }
+       .centro{
+        float: right;
+        width: 53%; 
+       }
+       .sdouble{
+        display: none;
+       }
+       #foto_capa > img{
+        width: auto;
+        height: 100%;
+        position: fixed;
+        }
+        #caixa_texto{
+            background-color: white;
+            padding: 10px;
+        }
+        #jobs > picture > img{
+            width: 100%;
+            display: flex;
+            margin: auto;
+        }
+        #texto{
+            text-indent: 20px;
+            text-align: justify;
+            line-height: 1.9em;
+        }
+        .hab{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        #SIG{
+            background-color: lightgrey;
+        }
+        #ht{
+            background-color: lightpink;
+        }
+        #cs{
+            background-color: lightcyan;
+        }
+        #js{
+            background-color: lightsalmon;
+        }
+        #jq{
+            background-color: lightgreen;
+        }
+        #location{
+            width: 100%;
+            border: 2px dashed red;
+        }
+         
 }
-@media screen and (min-width: 800px) and (max-width : 1200px){
-   .cab{
+@media screen and (min-width: 800px) and (max-width : 991px)  and (orientation: portrait){
+    body{
+        font-size: 25px;
+    }
+    .cab{
+        text-align: center;
+    }
+    #menus{
+        float: right;
+    }
+    #menus1, #head1{
+            display: none;
+    }
+    #foto_capa > img{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        margin: auto;
+        position: relative;
+    }
+    #jobs > picture > img{
+        width: 100%;
+        display: flex;
+        margin: auto;
+    }
+    #caixa_texto{
+        background-color: white;
+        padding: 10px;
+    }
+
+    #texto{
+        text-indent: 20px;
+        text-align: justify;
+        line-height: 1.9em;
+    }
+    .hab{
+        border: 1px solid black;
+        padding: 5px;
+    }
+    #SIG{
+        background-color: lightgrey;
+    }
+    #ht{
+        background-color: lightpink;
+    }
+    #cs{
+        background-color: lightcyan;
+    }
+    #js{
+        background-color: lightsalmon;
+    }
+    #jq{
+        background-color: lightgreen;
+    }
+    #location{
+        width: 100%;
+        border: 2px dashed red;
+    }
+}
+@media screen and (min-width: 800px) and (max-width : 991px)  and (orientation: landscape){
+    body{
+        font-size: 25px;
+    }
+    .cab{
     float: left;
     width: 260px;
    }
@@ -138,9 +263,78 @@ h4{
     display: none;
    }
    #foto_capa > img{
-    max-width: 100%;
+    width: auto;
     height: 100%;
     position: fixed;
+    }
+    #caixa_texto{
+        background-color: white;
+        padding: 10px;
+    }
+    #jobs > picture > img{
+        width: 100%;
+        display: flex;
+        margin: auto;
+    }
+    #texto{
+        text-indent: 20px;
+        text-align: justify;
+        line-height: 1.9em;
+    }
+    .hab{
+        border: 1px solid black;
+        padding: 5px;
+    }
+    #SIG{
+        background-color: lightgrey;
+    }
+    #ht{
+        background-color: lightpink;
+    }
+    #cs{
+        background-color: lightcyan;
+    }
+    #js{
+        background-color: lightsalmon;
+    }
+    #jq{
+        background-color: lightgreen;
+    }
+    #location{
+        width: 100%;
+        border: 2px dashed red;
+    }
+}
+@media screen and (min-width: 992px) and (max-width : 1200px) and (orientation: portrait){
+    body{
+        font-size: 25px;
+    }
+    .cab{
+    float: left;
+    width: 260px;
+   }
+   #head{
+    text-align: center;
+    margin: auto;
+   }
+   #menus,#head{
+    display: none;
+   }
+   .centro{
+    float: right;
+    width: 53%; 
+   }
+   .sdouble{
+    display: none;
+   }
+   #foto_capa > img{
+    width: 46%;
+    height: 100%;
+    position: fixed;
+    }
+    #caixa_texto{
+        background-color: white;
+        padding: 10px;
     }
     #jobs > picture > img{
         width: 100%;
@@ -177,7 +371,76 @@ h4{
     }
     
 }
+@media screen and (min-width: 992px) and (max-width : 1200px) and (orientation: landscape){
+    body{
+        font-size: 25px;
+    }
+    .cab{
+        float: left;
+        width: 260px;
+       }
+       #head{
+        text-align: center;
+        margin: auto;
+       }
+       #menus,#head{
+        display: none;
+       }
+       .centro{
+        float: right;
+        width: 53%; 
+       }
+       .sdouble{
+        display: none;
+       }
+       #foto_capa > img{
+        width: auto;
+        height: 100%;
+        position: fixed;
+        }
+        #caixa_texto{
+            background-color: white;
+            padding: 10px;
+        }
+        #jobs > picture > img{
+            width: 100%;
+            display: flex;
+            margin: auto;
+        }
+        #texto{
+            text-indent: 20px;
+            text-align: justify;
+            line-height: 1.9em;
+        }
+        .hab{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        #SIG{
+            background-color: lightgrey;
+        }
+        #ht{
+            background-color: lightpink;
+        }
+        #cs{
+            background-color: lightcyan;
+        }
+        #js{
+            background-color: lightsalmon;
+        }
+        #jq{
+            background-color: lightgreen;
+        }
+        #location{
+            width: 100%;
+            border: 2px dashed red;
+        }
+}
+
 @media screen and (min-width: 1201px) {
+    body{
+        font-size: 26px;
+    }
     .cab{
         float: left;
         width: 260px;
@@ -200,6 +463,10 @@ h4{
         width: 40%;
         height: 100%;
         position: fixed;
+        }
+        #caixa_texto{
+            background-color: white;
+            padding: 10px;
         }
         #jobs > picture > img{
             width: 100%;
