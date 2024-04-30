@@ -71,7 +71,7 @@ h4{
             display: none;
     }
     #foto_capa > img{
-        max-width: 80%;
+        width: 80%;
         height: 100%;
         display: flex;
         margin: auto;
