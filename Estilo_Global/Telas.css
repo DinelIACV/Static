@@ -115,7 +115,63 @@ h4{
         width: 100%;
         border: 2px dashed red;
     }
-}@media screen and (min-width: 240px) and (max-width: 799px) and (orientation: landscape){
+}@media screen and (min-width: 240px) and (max-width: 600px) and (orientation: landscape){
+    .cab{
+        text-align: center;
+    }
+    #menus{
+        float: right;
+    }
+    #menus1, #head1{
+            display: none;
+    }
+    #foto_capa > img{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        margin: auto;
+        position: relative;
+    }
+    #jobs > picture > img{
+        width: 100%;
+        display: flex;
+        margin: auto;
+    }
+    #caixa_texto{
+        background-color: white;
+        padding: 10px;
+    }
+
+    #texto{
+        text-indent: 20px;
+        text-align: justify;
+        line-height: 1.9em;
+    }
+    .hab{
+        border: 1px solid black;
+        padding: 5px;
+    }
+    #SIG{
+        background-color: lightgrey;
+    }
+    #ht{
+        background-color: lightpink;
+    }
+    #cs{
+        background-color: lightcyan;
+    }
+    #js{
+        background-color: lightsalmon;
+    }
+    #jq{
+        background-color: lightgreen;
+    }
+    #location{
+        width: 100%;
+        border: 2px dashed red;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 799px) and (orientation: landscape){
     body{
         font-size: 20px;
     }
@@ -138,7 +194,7 @@ h4{
         display: none;
        }
        #foto_capa > img{
-        width: 43vh;
+        width: 40%;
         height: 100%;
         position: fixed;
         }
@@ -239,6 +295,11 @@ h4{
         width: 100%;
         border: 2px dashed red;
     }
+    .btns{
+        width: 10px;
+        height: 60px;
+        font-size: 20px;
+    }
 }
 @media screen and (min-width: 800px) and (max-width : 991px)  and (orientation: landscape){
     body{
@@ -263,7 +324,7 @@ h4{
     display: none;
    }
    #foto_capa > img{
-    width: auto;
+    width: 43%;
     height: 100%;
     position: fixed;
     }
@@ -303,6 +364,11 @@ h4{
     #location{
         width: 100%;
         border: 2px dashed red;
+    }
+    .btns{
+        width: 10px;
+        height: 60px;
+        font-size: 20px;
     }
 }
 @media screen and (min-width: 992px) and (max-width : 1200px) and (orientation: portrait){
@@ -369,11 +435,16 @@ h4{
         width: 100%;
         border: 2px dashed red;
     }
+    .btns{
+        width: 10px;
+        height: 80px;
+        font-size: 23px;
+    }
     
 }
 @media screen and (min-width: 992px) and (max-width : 1200px) and (orientation: landscape){
     body{
-        font-size: 25px;
+        font-size: 27px;
     }
     .cab{
         float: left;
@@ -394,7 +465,7 @@ h4{
         display: none;
        }
        #foto_capa > img{
-        width: auto;
+        width: 45%;
         height: 100%;
         position: fixed;
         }
@@ -434,6 +505,11 @@ h4{
         #location{
             width: 100%;
             border: 2px dashed red;
+        }
+        .btns{
+            width: 10px;
+            height: 80px;
+            font-size: 25px;
         }
 }
 
@@ -500,5 +576,10 @@ h4{
         #location{
             width: 100%;
             border: 2px dashed red;
+        }
+        .btns{
+            width: 10px;
+            height: 80px;
+            font-size: 30px;
         }
 }
