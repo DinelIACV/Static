@@ -138,7 +138,7 @@ h4{
         display: none;
        }
        #foto_capa > img{
-        width: auto;
+        width: 43vh;
         height: 100%;
         position: fixed;
         }
