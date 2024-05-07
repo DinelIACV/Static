@@ -115,6 +115,9 @@ h4{
         width: 100%;
         border: 2px dashed red;
     }
+    .btns{
+        font-size: 21px;
+    }
 }@media screen and (min-width: 240px) and (max-width: 600px) and (orientation: landscape){
     .cab{
         text-align: center;
@@ -169,6 +172,9 @@ h4{
     #location{
         width: 100%;
         border: 2px dashed red;
+    }
+    .btns{
+        font-size: 21px;
     }
 }
 @media screen and (min-width: 601px) and (max-width: 799px) and (orientation: landscape){
@@ -235,6 +241,9 @@ h4{
             width: 100%;
             border: 2px dashed red;
         }
+        .btns{
+            font-size: 22px;
+        }
          
 }
 @media screen and (min-width: 800px) and (max-width : 991px)  and (orientation: portrait){
@@ -298,8 +307,9 @@ h4{
     .btns{
         width: 10px;
         height: 60px;
-        font-size: 20px;
+        font-size: 24px;
     }
+    
 }
 @media screen and (min-width: 800px) and (max-width : 991px)  and (orientation: landscape){
     body{
@@ -368,7 +378,7 @@ h4{
     .btns{
         width: 10px;
         height: 60px;
-        font-size: 20px;
+        font-size: 24px;
     }
 }
 @media screen and (min-width: 992px) and (max-width : 1200px) and (orientation: portrait){
