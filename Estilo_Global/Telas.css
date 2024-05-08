@@ -60,6 +60,18 @@ h4{
 #menus{
     display: none;
 }
+ul{
+    list-style: none;
+}
+li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+li > a:hover{
+    color: red;
+    font-size: 25px;
+}
 @media screen and (min-width: 240px) and (max-width: 799px) and (Orientation:portrait){
     .cab{
         text-align: center;
@@ -115,7 +127,7 @@ h4{
         width: 100%;
         border: 2px dashed red;
     }
-    .btns{
+    .btns, #btn1 , #btn2{
         font-size: 21px;
     }
 }@media screen and (min-width: 240px) and (max-width: 600px) and (orientation: landscape){
@@ -173,7 +185,7 @@ h4{
         width: 100%;
         border: 2px dashed red;
     }
-    .btns{
+    .btns, #btn1 , #btn2{
         font-size: 21px;
     }
 }
@@ -241,7 +253,7 @@ h4{
             width: 100%;
             border: 2px dashed red;
         }
-        .btns{
+        .btns, #btn1 , #btn2{
             font-size: 22px;
         }
          
@@ -304,9 +316,7 @@ h4{
         width: 100%;
         border: 2px dashed red;
     }
-    .btns{
-        width: 10px;
-        height: 60px;
+    .btns, #btn1 , #btn2{
         font-size: 24px;
     }
     
@@ -375,9 +385,7 @@ h4{
         width: 100%;
         border: 2px dashed red;
     }
-    .btns{
-        width: 10px;
-        height: 60px;
+    .btns, #btn1 , #btn2{
         font-size: 24px;
     }
 }
@@ -445,9 +453,7 @@ h4{
         width: 100%;
         border: 2px dashed red;
     }
-    .btns{
-        width: 10px;
-        height: 80px;
+    .btns, #btn1 , #btn2{    
         font-size: 23px;
     }
     
@@ -516,9 +522,7 @@ h4{
             width: 100%;
             border: 2px dashed red;
         }
-        .btns{
-            width: 10px;
-            height: 80px;
+        .btns, #btn1 , #btn2{
             font-size: 25px;
         }
 }
@@ -587,9 +591,7 @@ h4{
             width: 100%;
             border: 2px dashed red;
         }
-        .btns{
-            width: 10px;
-            height: 80px;
+        .btns, #btn1, #btn2{
             font-size: 30px;
         }
 }

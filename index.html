@@ -116,20 +116,33 @@
                                 <tbody>
                                     <tr>
                                         <td>Sites Estáticos</td>
-                                        <td>1500--3000 mzn</td>
+                                        <td>1500-3900 mzn</td>
                                     </tr>
                                     <tr>
                                         <td>Sites dinâmicos</td>
-                                        <td>4000-6000 mzn</td>
+                                        <td>4000-8000 mzn</td>
                                     </tr>
                                     <tr>
                                         <td>Ecommerce</td>
-                                        <td>10.000 mzn-100.000 mzn</td>
+                                        <td>Apartir de 10.000 mzn</td>
                                     </tr>
                                     <tr style="background-color: gray; ">
                                         <td colspan="2"> 
                                             <button class="btns" id="btn3" style="display: flex;margin: auto; width: 29%;" 
                                             >PAGAR</button>
+                                            <ul style="display: none;" class="lista1">
+                                                <li>
+                                                    <a href="https://www.vm.co.mz/m-pesa" target="_blank" >
+                                                       💵 Mpesa <img src="Favicons/icons8-mpesa-24.png" alt="" style="width: 20px;">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.westernunion.com/pt/pt/home.html" target="_blank">
+                                                       🏧 Western Union <img src="Favicons/western-union.png" alt="" 
+                                                        style="width: 60px;">
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -143,24 +156,37 @@
                                 <tbody>
                                     <tr>
                                         <td>Análises Espacial simples</td>
-                                        <td> 1000 - 2000 mzn</td>
+                                        <td> 1000 - 3000 mzn</td>
                                     </tr>
                                     <tr>
                                         <td>Análises Espacias complexas</td>
-                                        <td> 2500 -- </td>
+                                        <td> Apartir 2500 </td>
                                     </tr>
                                     <tr>
                                         <td>Trabalho simples no terrSet </td>
-                                        <td> 1000 mzn </td>
+                                        <td> Apartir de 1000 mzn </td>
                                     </tr>
                                     <tr>
                                         <td>Trabalho complexos no terrSet </td>
-                                        <td> ------</td>
+                                        <td> Apartir 5000</td>
                                     </tr>
                                     <tr style="background-color: gray; ">
                                         <td colspan="2"> 
                                             <button class="btns"  id="btn4" style="display: flex;margin: auto; width: 29%;" 
                                             >PAGAR</button>
+                                            <ul style="display: none;" class="lista2">
+                                                <li>
+                                                    <a href="https://www.vm.co.mz/m-pesa" target="_blank" >
+                                                       💵 Mpesa <img src="Favicons/icons8-mpesa-24.png" alt="" style="width: 20px;">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.westernunion.com/pt/pt/home.html" target="_blank">
+                                                       🏧 Western Union <img src="Favicons/western-union.png" alt="" 
+                                                        style="width: 60px;">
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -245,10 +271,22 @@
             })
             showSlide(contadorslides)
             $("#btn3").click(()=>{
-                $('#btn3').css({"width": "100%"}).html('Mpesa: +258 848393826 / WesterUnion: dinelvilanculos@gmail.com').hide(16000)
+                let lista1 = $(".lista1")
+                let resposta = confirm('Deseja prosseguir com o pagamento?')
+                if (resposta){
+                    $("#btn3").hide()
+                    $('.lista1').show()
+                    alert("Solicita os dados ao Dinel Southman")
+                }
             })
             $("#btn4").click(()=>{
-                $('#btn4').css({"width": "100%"}).html('Mpesa: +258 848393826 / WesterUnion: dinelvilanculos@gmail.com').hide(16000)
+                let lista2 = $(".lista2")
+                let resposta = confirm('Deseja prosseguir com o pagamento?')
+                if (resposta){
+                    $("#btn4").hide()
+                    $('.lista2').show()
+                    alert("Solicita os dados ao Dinel Southman")
+                }
             })
             $("#lk1").click(()=>{
                 let resp = '🙏' ;
