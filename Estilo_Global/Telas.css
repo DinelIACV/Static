@@ -99,8 +99,8 @@ li > a:hover{
         padding: 10px;
     }
     #map{
-        width: 300px;
-        height: 300px;
+        width: 65vh;
+        height: 500px;
     }
     #texto{
         text-indent: 20px;
@@ -160,8 +160,8 @@ li > a:hover{
         padding: 10px;
     }
     #map{
-        width: 280px;
-        height: 200px;
+        width: 85vw;
+        height: 500px;
     }
     #texto{
         text-indent: 20px;
@@ -262,6 +262,10 @@ li > a:hover{
         .btns, #btn1 , #btn2{
             font-size: 22px;
         }
+        #map{
+            width: 85vh;
+            height: 500px;
+        }
          
 }
 @media screen and (min-width: 800px) and (max-width : 991px)  and (orientation: portrait){
@@ -324,6 +328,10 @@ li > a:hover{
     }
     .btns, #btn1 , #btn2{
         font-size: 24px;
+    }
+    #map{
+        width: 85vh;
+        height: 500px;
     }
     
 }
@@ -394,6 +402,10 @@ li > a:hover{
     .btns, #btn1 , #btn2{
         font-size: 24px;
     }
+    #map{
+        width: 85vh;
+        height: 500px;
+    }
 }
 @media screen and (min-width: 992px) and (max-width : 1200px) and (orientation: portrait){
     body{
@@ -461,6 +473,10 @@ li > a:hover{
     }
     .btns, #btn1 , #btn2{    
         font-size: 23px;
+    }
+    #map{
+        width: 85vh;
+        height: 600px;
     }
     
 }
@@ -531,6 +547,10 @@ li > a:hover{
         .btns, #btn1 , #btn2{
             font-size: 25px;
         }
+        #map{
+            width: 85vh;
+            height: 600px;
+        }
 }
 
 @media screen and (min-width: 1201px) {
@@ -599,5 +619,9 @@ li > a:hover{
         }
         .btns, #btn1, #btn2{
             font-size: 30px;
+        }
+        #map{
+            width: 85vh;
+            height: 600px;
         }
 }

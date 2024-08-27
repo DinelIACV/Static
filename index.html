@@ -21,6 +21,7 @@
             height: 600px;
             margin-bottom: 10px;
             border: 1px dashed red;
+            display: none;
         }
     </style>
 </head>
@@ -116,6 +117,12 @@
                         </p>
                         <p class="hab" id="jq">
                             jQuery <span style="float: right; padding-right: 10px;">75%</span>
+                        </p>
+                        <p class="hab" id="Lf">
+                            Leaflet <span style="float: right; padding-right: 10px;">Noções Básicas</span>
+                        </p>
+                        <p class="hab" id="Rjs">
+                            React Js <span style="float: right; padding-right: 10px;">Noções Básicas</span>
                         </p>
                     </section>
                 </article>
@@ -260,16 +267,30 @@
     </div>
     
     <script>
-        var map = L.map('map').setView([-25.845157, 32.483759],16)
-        var marker = L.marker([-25.845157, 32.483759]).addTo(map)
-        marker.bindPopup('Minha localização').openPopup()
+        var map = L.map('map', {
+            center: [-25.845157, 32.483759],
+    zoomControl: false, // Remove os botões de zoom
+    dragging: false, // Impede que o mapa seja arrastado
+    scrollWheelZoom: false, // Desativa o zoom com a roda do mouse
+    doubleClickZoom: false, // Desativa o zoom com duplo clique
+    touchZoom: false, // Desativa o zoom por gestos de toque
+    tap: false // Desativa a funcionalidade de toque
+});
+        var marker1 = L.marker([-25.845157, 32.483759]).addTo(map)
+        marker1.bindPopup('Minha localização').openPopup()
       
   
-        var marker = L.marker([-25.842969, 32.482259]).addTo(map)
-        marker.bindPopup("Paragem Loja").openPopup()
+        var marker2 = L.marker([-25.842969, 32.482259]).addTo(map)
+        marker2.bindPopup("Paragem Loja").openPopup()
 
-        var marker = L.marker([-25.8416625, 32.4841160]).addTo(map)
-        marker.bindPopup("Terminar de Chapas de Nkobe").openPopup()
+        var marker3 = L.marker([-25.8416625, 32.4841160]).addTo(map)
+        marker3.bindPopup("Terminar de Chapas de Nkobe").openPopup()
+
+
+        // Definir os limites para garantir que todos os marcadores estejam visíveis
+        var group = new L.featureGroup([marker1, marker2, marker3]);
+        map.fitBounds(group.getBounds());
+
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
